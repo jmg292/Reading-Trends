@@ -172,8 +172,8 @@ class Book_Parser(Parser):
 
 test_parser = Book_Parser()
 
-test_book_angels_demons = open("test_book_angels_demons.html")
-test_book_meditations = open("test_book_meditations.html")
+test_book_angels_demons = open("test_book_angels_demons.html", "rb")
+test_book_meditations = open("test_book_meditations.html", "rb")
 
 book_soup_angels_demons = test_parser.html_to_soup(test_book_angels_demons)
 book_soup_meditations = test_parser.html_to_soup(test_book_meditations)
